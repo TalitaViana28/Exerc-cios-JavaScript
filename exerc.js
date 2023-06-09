@@ -34,8 +34,6 @@ console.log(comida);
 
 // Digite a instrução que imprime o valor de 'feijao', que está na variável `comida`.
 console.log(comida[1]);
-
-// Digite o código que verifica se a variável `soma' é igual a variável `myvar` (testando também o tipo).
 console.log(soma === myvar);
 
 // Digite o código que verifica se a variável `myvar` é menor ou igual à variável `soma`.
