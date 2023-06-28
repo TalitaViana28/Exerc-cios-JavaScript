@@ -1,17 +1,14 @@
 (function (win, doc) {
   "use strict";
-  var counter = 0;
-  var $button = doc.querySelector('[data-js="button"]');
-  var temporizador;
-  function timer() {
-    console.log("timer", counter++);
+
+  function myFunction() {
+    var result = Array.prototype.reduce.call(
+      arguments,
+      function (acumulated, actual, index) {
+        return acumulated + actual;
+      }
+    );
+    console.log(result);
   }
-  temporizador = setInterval(timer, 1000);
-  $button.addEventListener(
-    "click",
-    function () {
-      clearInterval(temporizador);
-    },
-    false
-  );
+  myFunction(1, 2, 3, 4, 5, 6);
 })(window, document);
