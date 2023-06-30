@@ -1,14 +1,11 @@
-(function (win, doc) {
+(function () {
   "use strict";
 
-  function myFunction() {
-    var result = Array.prototype.reduce.call(
-      arguments,
-      function (acumulated, actual, index) {
-        return acumulated + actual;
-      }
-    );
-    console.log(result);
-  }
-  myFunction(1, 2, 3, 4, 5, 6);
-})(window, document);
+  var arr = [
+    { item: "Arroz", price: "R$ 10" },
+    { item: "Feijão", price: "R$ 20" },
+    { item: "Macarrão", price: "R$ 12" },
+    { item: "Carne", price: "R$ 30" },
+  ];
+  console.table(arr);
+})();
